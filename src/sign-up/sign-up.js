@@ -1,22 +1,12 @@
-let form = document.getElementById('Formfill')
-let username = document.getElementById('username')
-let email = document.getElementById('email')
-let password = document.getElementById('password')
-let cpassword = document.getElementById('cpassword')
-let result = document.getElementById('result')
-let btn = document.getElementById('btn')
+const form = document.getElementById('Formfill')
+const username = document.getElementById('username')
+const email = document.getElementById('email')
+const password = document.getElementById('password')
+const cpassword = document.getElementById('cpassword')
+const result = document.getElementById('result')
+const btn = document.getElementById('btn')
 
-const info = () =>{
-   let infoName =username.value
-   let infoEmail =email.value
-   let infoPassword =password.value
 
-   console.log(infoName)
-   console.log(infoEmail)
-   console.log(infoPassword)
-   
-
-}
 const validation = () =>{
     if(username.value == ""){
         result.innerHTML= "Enter your username*"
@@ -43,10 +33,19 @@ const validation = () =>{
         return false
     }
     if(username.value !== "" && email.value !== "" && password.value == cpassword.value){
-        window.location.assign('timely.html');
+        window.location.assign('/src/timely/timely.html');
         alert('Login Successfully')
+        form.reset()
     }
 }
 
+form.addEventListener("submit",(event)=>{
+    event.preventDefault()
+    validation()
+})
+const navlog = ()=>{
+window.location.assign('/src/Login/login.html')
+}
 
+console.log(form)
 

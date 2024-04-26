@@ -90,6 +90,9 @@ input::placeholder{
 .group a:focus{
     text-decoration: underline;
 }
+span:hover {
+    cursor:pointer;
+    }
 #result{
     color: red;
     font-weight: 600;

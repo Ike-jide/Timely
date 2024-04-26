@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="form-box">
-            <form action="" id="Formfill" onsubmit=" return event.preventDefault(),  validation() ">
+            <form action="" id="Formfill" >
                 <h2>Sign-up</h2>
                 <p id="result"></p>
                 <div class="input-box">
@@ -29,15 +29,15 @@
                     <input type="password" id="cpassword" placeholder="Confirm password"/>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Sign-up" class="btn" id="btn" onclick="info()"/>
+                    <input type="submit" value="Sign-up" class="btn" id="btn"/>
                 </div>
                 <div class="group">
                     <span><a href="#">Forgot password</a> </span>
-                    <span><a href="#">Login</a> </span>
+                    <span><a href="#" onclick="navlog()">Login</a> </span>
                 </div>
             </form>
         </div>
     </div>
-    <script src="timely.js"></script>
+    <script src="sign-up.js"></script>
 </body>
 </html>
