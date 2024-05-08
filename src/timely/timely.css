@@ -49,3 +49,11 @@ body{
 table, th, td {
     border: 1px solid black;
   }
+  .search-bar{
+    display: flex;
+    border: 1px solid;
+    width: 100px;
+  }
+  .search{
+    border: none;
+  }
