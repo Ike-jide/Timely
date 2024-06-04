@@ -1,6 +1,11 @@
 const create = document.querySelector(".newSchedule")
 const view = document.querySelector(".viewEmails")
 const table = document.querySelector(".table")
+const create2= document.querySelector(".create")
+
+create2.addEventListener('click',()=>{
+    
+})
 
 create.addEventListener('click',()=>{
 
